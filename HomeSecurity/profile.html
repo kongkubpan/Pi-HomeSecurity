@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Setting</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link href="dashboard.css" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> ทำให้รูปกลม -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Home Security</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-------------------- nav bar ------------------------>
+      
+    <div class="container-fluid">
+        <div class="row">
+
+          <!------------- MENU bar--------------->
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.html">
+                    <span data-feather="home"></span>
+                    Dashboard <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="profile.html">
+                        <span data-feather="settings"></span>
+                        User Profile
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="camera.html">
+                    <span data-feather="camera"></span>
+                    Camera
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="vdorecord.html">
+                    <span data-feather="video"></span>
+                    VDO Record
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="door.html">
+                    <span data-feather="sidebar"></span>
+                    Door
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="alam.html">
+                    <span data-feather="alert-triangle"></span>
+                    Alam
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="setting.html">
+                    <span data-feather="settings"></span>
+                    Setting
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </nav>  
+          <!------------- MENU bar--------------->
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Profile</h1>
+            </div> -->
+      
+            <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+            <!-- <h6 class="h2" >เดี๋ยวพี่ทำหน้าเดียว อิอิ</h6>      -->
+            <!--------------------------------------------------------------->       
+            <div class="section-image" data-image="../../assets/img/bg5.jpg" ;="">
+                <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+                
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <form class="form" method="" action="">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Profile</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="row">
+                                            <div class="col-md-5 pr-1">
+                                                <div class="form-group">
+                                                    <label>Company</label>
+                                                    <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 px-1">
+                                                <div class="form-group">
+                                                    <label>Username</label>
+                                                    <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pl-1">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Email address</label>
+                                                    <input type="email" class="form-control" placeholder="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>First Name</label>
+                                                    <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pl-1">
+                                                <div class="form-group">
+                                                    <label>Last Name</label>
+                                                    <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Address</label>
+                                                    <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 pr-1">
+                                                <div class="form-group">
+                                                    <label>City</label>
+                                                    <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 px-1">
+                                                <div class="form-group">
+                                                    <label>Country</label>
+                                                    <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pl-1">
+                                                <div class="form-group">
+                                                    <label>Postal Code</label>
+                                                    <input type="number" class="form-control" placeholder="ZIP Code">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>About Me</label>
+                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                                <h6>Upload a different photo...</h6>
+                                <input type="file" class="text-center center-block file-upload">
+                            </div></hr><br>
+                        </div>
+                        <script type="text/javascript">
+                            $(document).ready(function() { 
+                            var readURL = function(input) {
+                                if (input.files && input.files[0]) {
+                                    var reader = new FileReader();
+                        
+                                    reader.onload = function (e) {
+                                        $('.avatar').attr('src', e.target.result);
+                                    }
+                            
+                                    reader.readAsDataURL(input.files[0]);
+                                }
+                            }
+                            $(".file-upload").on('change', function(){
+                                readURL(this);
+                            });
+                            });	
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------->
+          </main>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+    <script src="feather.js"></script></body>
+
+
+</body>
+</html>
